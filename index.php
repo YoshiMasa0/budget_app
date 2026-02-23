@@ -1,5 +1,7 @@
 <?php
+require_once "config.php";
 require_once "application/constant.php";
+
 spl_autoload_register(function ($class) {
     require_once Constants::CONTROLLER_PATH . $class . '.php';
 });
