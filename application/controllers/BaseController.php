@@ -18,6 +18,7 @@ abstract class BaseController
     {
         $this->before();
         $this->dispatch();
+        $this->render();
     }
 
     /**
