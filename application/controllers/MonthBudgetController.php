@@ -5,7 +5,7 @@ class MonthBudgetController extends BaseController
 
     protected function get()
     {
-        echo "GET request received.";
         $this->context["title"] = "月予算管理";
+        parent::get();
     }
 }
